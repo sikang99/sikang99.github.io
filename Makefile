@@ -13,7 +13,7 @@ git-push gu:
 	git push origin master
 
 readme md:
-	README.md
+	vi README.md
 
 make m:
 	vi Makefile

@@ -1,4 +1,4 @@
 # Stoney Space
 
-This is 1st web page for me.
+This is the 1st web page for me.
 

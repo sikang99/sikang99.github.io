@@ -1,17 +1,31 @@
 
 
-
+<html>
 Here are some pictures for my life.
+<script>
+video = document.getElementById("live")
+var ctx;
+// use the chrome specific GetUserMedia function
+navigator.webkitGetUserMedia("video",
+function(stream) {
+	video.src = webkitURL.createObjectURL(stream);
+},
+function(err) {
+	console.log("Unable to get video stream!")
+}
+)
+</script>
 
 <br>
 <img src=image/gopher.png>Gopher</img>
 
-
-
+<div>
+    <video id="live" width="320" height="240" autoplay></video>
+</div>
 
 <ul>
 <li><a href="http://learningwebgl.com/">Learning WebGL</a>
 <ul>
  
 
-
+<html>

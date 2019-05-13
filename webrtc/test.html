@@ -1,0 +1,36 @@
+<html>
+Here are some pictures for my life.
+<script>
+navigator.getUserMedia = navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia;
+
+if (navigator.getUserMedia) {
+   navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
+      function(stream) {
+         var video = document.querySelector('video');
+         video.src = window.URL.createObjectURL(stream);
+         video.onloadedmetadata = function(e) {
+           video.play();
+         };
+      },
+      function(err) {
+         console.log("The following error occured: " + err.name);
+      }
+   );
+} else {
+   console.log("getUserMedia not supported");
+}
+</script>
+
+<br>
+<img src=../image/gopher.png>Gopher</img>
+
+<div>
+    <video id="video" width="320" height="240" autoplay></video>
+</div>
+
+<ul>
+<li><a href="http://learningwebgl.com/">Learning WebGL</a>
+<ul>
+<html>

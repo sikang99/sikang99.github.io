@@ -5,8 +5,8 @@
 usage:
 	@echo "make [web|git]"
 #-----------------------------------------------------------------------------------------
-edit-history eh:
-	vi HISTORY.md
+edit-html eh:
+	vi index.html
 #-----------------------------------------------------------------------------------------
 web w:
 	xdg-open https://github.com/sikang99/sikang99.github.io

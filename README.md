@@ -1,4 +1,4 @@
-# Stoney Space
+# Web Space of Stoney.Kang
 
 This is the 1st web page for me.
 

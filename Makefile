@@ -13,7 +13,7 @@ git g:
 	@echo "make (git) [update|login|tag|status]"
 
 git-update gu:
-	git add .gitignore Makefile *.md flutterweb/ webrtc/
+	git add .gitignore Makefile *.md # flutterweb/ webrtc/
 	#git commit -m "initial commit"
 	#git remote remove go.mod sse.go
 	#git commit -m "add examples"

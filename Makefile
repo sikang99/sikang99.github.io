@@ -15,7 +15,7 @@ git g:
 	@echo "make (git) [update|login|tag|status]"
 
 git-update gu:
-	git add .gitignore Makefile *.md index.html flutterweb/ webrtc/
+	git add .gitignore Makefile *.md index.html flutterweb/ webrtc/ wasm/ serverless/
 	#git commit -m "initial commit"
 	git commit -m "update contents"
 	git push
